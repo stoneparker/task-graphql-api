@@ -1,5 +1,4 @@
 import { Field, InputType, ID } from 'type-graphql';
-import { User } from '../models/user';
 
 @InputType()
 export class GetUserTasks {
