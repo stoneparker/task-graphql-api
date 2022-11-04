@@ -1,5 +1,4 @@
 import { Field, ObjectType, ID } from 'type-graphql';
-import { User } from './user';
 
 @ObjectType()
 export class Task {
@@ -9,9 +8,9 @@ export class Task {
   @Field()
   name: string;
 
+  // transformar em enum
   @Field()
   status: string;
 
-  @Field()
-  user: User;
+  user_id: string;
 }
