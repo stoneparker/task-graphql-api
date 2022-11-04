@@ -16,7 +16,10 @@ export class User {
 }
 
 @ObjectType()
-export class LoginReturn {
+export class AuthReturn {
+  @Field(() => ID)
+  id: string;
+
   @Field()
   token: string;
 
